@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:5000/allUser");
+      const res = await axios.get("https://api-5o7e.onrender.com/allUser");
       setUserData(res.data);
     };
     fetchData();

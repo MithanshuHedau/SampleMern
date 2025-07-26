@@ -12,7 +12,7 @@ const EditUser = () => {
     const title = e.target.title.value;
     const description = e.target.description.value;
     try {
-      await axios.put(`http://localhost:5000/edit/${user._id}`, {
+      await axios.put(`https://api-5o7e.onrender.com/edit/${user._id}`, {
         title,
         description,
       });

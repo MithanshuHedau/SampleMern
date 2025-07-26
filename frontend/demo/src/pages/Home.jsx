@@ -9,7 +9,7 @@ const Home = ({ userData }) => {
   const handleCardClick = async (user) => {
     try {
       const id = user._id;
-      const response = await axios.get(`http://localhost:5000/${id}`);
+      const response = await axios.get(`https://api-5o7e.onrender.com/${id}`);
       console.log("User data fetched successfully:", response.data);
       navigate(`/user/${id}`, { state: { user: response.data } });
     } catch (error) {
@@ -19,7 +19,7 @@ const Home = ({ userData }) => {
 
   const handelDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/delete/${id}`);
+      const response = await axios.delete(`https://api-5o7e.onrender.com/delete/${id}`);
       console.log("User deleted successfully:", response.data);
       window.location.reload();
     } catch (error) {

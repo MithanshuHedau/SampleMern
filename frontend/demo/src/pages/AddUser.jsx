@@ -9,7 +9,7 @@ const AddUser = () => {
   const handelSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/add", {
+      const response = await axios.post("https://api-5o7e.onrender.com/add", {
         title,
         description,
       });
