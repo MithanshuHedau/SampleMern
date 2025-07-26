@@ -1,0 +1,33 @@
+/* User.css */
+.user-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.user-title {
+  color: #2d3a4b;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.user-subtitle {
+  color: #4a90e2;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.user-description {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.user-empty {
+  text-align: center;
+  color: #888;
+}
